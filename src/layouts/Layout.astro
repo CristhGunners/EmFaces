@@ -1,0 +1,78 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="EmFaces - Free collection of emoticons" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="/favicon/favicon.ico" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#db2777"
+    />
+    <meta name="msapplication-TileColor" content="#db2777" />
+    <meta name="theme-color" content="#db2777" />
+    <meta
+      name="keywords"
+      content="emoticons, icons, design, free, resource, faces"
+    />
+    <meta name="author" content="CristhGunners" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content=`${title} - EmFaces` />
+    <meta
+      property="og:description"
+      content="EmFaces - Free collection of emoticons"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="EmFaces" />
+    <meta property="og:image" content="/share.png" />
+    <title>{title} - EmFaces</title>
+  </head>
+  <body>
+    <div class="px-4">
+      <div class="max-w-6xl mx-auto">
+        <Header />
+        <main>
+          <slot />
+        </main>
+        <Footer />
+      </div>
+    </div>
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: system-ui, sans-serif;
+    background: #fff;
+  }
+</style>

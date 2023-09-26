@@ -1,0 +1,22 @@
+{
+  "name": "emfaces",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "@fontsource-variable/raleway": "^5.0.9",
+    "@fontsource/pattaya": "^5.0.12",
+    "astro": "^3.1.2",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.3"
+  }
+}

@@ -1,0 +1,44 @@
+---
+import '@fontsource/pattaya';
+import '@fontsource-variable/raleway';
+
+interface Props {}
+
+const {} = Astro.props;
+---
+
+<footer class="py-4 flex flex-col items-center justify-center space-y-2">
+  <p class="font-raleway font-bold block text-center">
+    This work is licensed under <a
+      href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+      target="_blank"
+      rel="license noopener noreferrer"
+      style="display:inline-block;"
+      class="hover:text-pink-600"
+      >Attribution 4.0 International<img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;display:inline-block;"
+        alt="CC"
+        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+      /><img
+        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;display:inline-block;"
+        alt="By"
+        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+      /></a
+    >
+  </p>
+  <h2>
+    <a href="/" class=`font-pattaya text-gray-300 text-2xl hover:text-pink-600`
+      >EmFaces</a
+    >
+  </h2>
+  <span class="font-raleway block text-gray-300 font-bold"
+    >{new Date().getFullYear()}</span
+  >
+  <a
+    href="https://cristhgunners.github.io/"
+    rel="noopener"
+    target="_blank"
+    class="font-raleway block text-gray-300 font-bold hover:text-pink-600"
+    >CristhGunners</a
+  >
+</footer>

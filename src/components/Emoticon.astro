@@ -1,0 +1,27 @@
+---
+import '@fontsource-variable/raleway';
+
+interface Props {
+  name: string;
+  bgColor: string;
+  filename: string;
+}
+
+const { name, bgColor, filename } = Astro.props;
+---
+
+<div
+  class=`py-10 px-4 ${bgColor} space-y-6 flex flex-col items-center justify-between`
+>
+  <h2 class="font-raleway font-bold text-white text-center text-xl">{name}</h2>
+  <img
+    src=`/emoticons/${filename}.svg`
+    alt={name}
+    class="w-60 mx-auto block cursor-zoom-in transform transition duration-300 hover:scale-105"
+  />
+  <a
+    href=`/emoticons/${filename}.svg`
+    class=`font-raleway font-bold text-white text-xl border-2 border-white rounded-full py-2 px-4 mx-auto transform transition duration-300 hover:bg-black hover:bg-opacity-25`
+    download>Download</a
+  >
+</div>
