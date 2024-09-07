@@ -1,14 +1,14 @@
 ---
-import '@fontsource/pattaya';
 import '@fontsource-variable/raleway';
+import '@fontsource/pattaya';
 
 interface Props {}
 
 const {} = Astro.props;
 ---
 
-<footer class="py-4 flex flex-col items-center justify-center space-y-2">
-  <p class="font-raleway font-bold block text-center">
+<footer class="flex flex-col items-center justify-center space-y-2 py-4">
+  <p class="block text-center font-raleway font-bold">
     This work is licensed under <a
       href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
       target="_blank"
@@ -27,18 +27,19 @@ const {} = Astro.props;
     >
   </p>
   <h2>
-    <a href="/" class=`font-pattaya text-gray-300 text-2xl hover:text-pink-600`
-      >EmFaces</a
+    <a
+      href="https://cristhgunners.github.io/emfaces/"
+      class=`font-pattaya text-2xl text-gray-300 hover:text-pink-600`>EmFaces</a
     >
   </h2>
-  <span class="font-raleway block text-gray-300 font-bold"
+  <span class="block font-raleway font-bold text-gray-300"
     >{new Date().getFullYear()}</span
   >
   <a
-    href="https://cristhgunners.github.io/"
+    href="https://www.cristhgunners.com/"
     rel="noopener"
     target="_blank"
-    class="font-raleway block text-gray-300 font-bold hover:text-pink-600"
+    class="block font-raleway font-bold text-gray-300 hover:text-pink-600"
     >CristhGunners</a
   >
 </footer>
